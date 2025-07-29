@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Day Forecast - Wonderful Weather Widget - Aidan Savant</title>
+    <link rel="stylesheet" href="css/forecast.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>5-Day Weather Forecast</h1>
+            <p><a href="index.html">Back to Today's Weather</a></p>
+        </header>
+
+        <div class="location">
+            <h2 id="city">Loading location...</h2>
+            <p id="stateAndCountry">--</p>
+        </div>
+
+        <div class="forecast-container">
+            <div class="forecast-card" id="forecastCard1">
+                <div class="forecast-header">
+                    <div class="forecast-date">
+                        <h3 id="day1Name">Day 1</h3>
+                        <p id="day1Date">Date</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img id="day1Icon" src="" alt="Weather Icon">
+                    </div>
+                </div>
+                
+                <div class="forecast-temps">
+                    <span id="day1TempHigh" class="temp-high">--</span>
+                    <span class="temp-unit">°F</span>
+                    <span id="day1TempLow" class="temp-low">--</span>
+                    <span class="temp-unit">°F</span>
+                </div>
+                
+                <div class="forecast-description">
+                    <p id="day1WeatherDesc">--</p>
+                </div>
+                
+                <div class="forecast-attrs">
+                    <div class="attr-item">
+                        <span class="attr-label">Humidity: </span>
+                        <span id="day1Humidity" class="attr-value">--%</span>
+                    </div>
+
+                    <div class="attr-item">
+                        <span class="attr-label">Wind: </span>
+                        <span id="day1WindSpeed" class="attr">-- mph</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Pressure: </span>
+                        <span id="day1Pressure" class="attr-value">-- hPa</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Visibility: </span>
+                        <span id="day1Visibility" class="attrValue">-- mi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 Forecast Card -->
+            <div class="forecast-card" id="forecastCard2">
+                <div class="forecast-header">
+                    <div class="forecast-date">
+                        <h3 id="day2Name">Day 2</h3>
+                        <p id="day2Date">Date</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img id="day2Icon" src="" alt="Weather Icon">
+                    </div>
+                </div>
+                
+                <div class="forecast-temps">
+                    <span id="day2TempHigh" class="temp-high">--</span>
+                    <span class="temp-unit">°F</span>
+                    <span id="day2TempLow" class="temp-low">--</span>
+                    <span class="temp-unit">°F</span>
+                </div>
+                
+                <div class="forecast-description">
+                    <p id="day2WeatherDesc">--</p>
+                </div>
+                
+                <div class="forecast-attrs">
+                    <div class="attr-item">
+                        <span class="attr-label">Humidity: </span>
+                        <span id="day2Humidity" class="attr-value">--%</span>
+                    </div>
+
+                    <div class="attr-item">
+                        <span class="attr-label">Wind: </span>
+                        <span id="day2WindSpeed" class="attr">-- mph</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Pressure: </span>
+                        <span id="day2Pressure" class="attr-value">-- hPa</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Visibility: </span>
+                        <span id="day2Visibility" class="attrValue">-- mi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 Forecast Card -->
+            <div class="forecast-card" id="forecastCard3">
+                <div class="forecast-header">
+                    <div class="forecast-date">
+                        <h3 id="day3Name">Day 3</h3>
+                        <p id="day3Date">Date</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img id="day3Icon" src="" alt="Weather Icon">
+                    </div>
+                </div>
+                
+                <div class="forecast-temps">
+                    <span id="day3TempHigh" class="temp-high">--</span>
+                    <span class="temp-unit">°F</span>
+                    <span id="day3TempLow" class="temp-low">--</span>
+                    <span class="temp-unit">°F</span>
+                </div>
+                
+                <div class="forecast-description">
+                    <p id="day3WeatherDesc">--</p>
+                </div>
+                
+                <div class="forecast-attrs">
+                    <div class="attr-item">
+                        <span class="attr-label">Humidity: </span>
+                        <span id="day3Humidity" class="attr-value">--%</span>
+                    </div>
+
+                    <div class="attr-item">
+                        <span class="attr-label">Wind: </span>
+                        <span id="day3WindSpeed" class="attr">-- mph</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Pressure: </span>
+                        <span id="day3Pressure" class="attr-value">-- hPa</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Visibility: </span>
+                        <span id="day3Visibility" class="attrValue">-- mi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 4 Forecast Card -->
+            <div class="forecast-card" id="forecastCard4">
+                <div class="forecast-header">
+                    <div class="forecast-date">
+                        <h3 id="day4Name">Day 4</h3>
+                        <p id="day4Date">Date</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img id="day4Icon" src="" alt="Weather Icon">
+                    </div>
+                </div>
+                
+                <div class="forecast-temps">
+                    <span id="day4TempHigh" class="temp-high">--</span>
+                    <span class="temp-unit">°F</span>
+                    <span id="day4TempLow" class="temp-low">--</span>
+                    <span class="temp-unit">°F</span>
+                </div>
+                
+                <div class="forecast-description">
+                    <p id="day4WeatherDesc">--</p>
+                </div>
+                
+                <div class="forecast-attrs">
+                    <div class="attr-item">
+                        <span class="attr-label">Humidity: </span>
+                        <span id="day4Humidity" class="attr-value">--%</span>
+                    </div>
+
+                    <div class="attr-item">
+                        <span class="attr-label">Wind: </span>
+                        <span id="day4WindSpeed" class="attr">-- mph</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Pressure: </span>
+                        <span id="day4Pressure" class="attr-value">-- hPa</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Visibility: </span>
+                        <span id="day4Visibility" class="attrValue">-- mi</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 5 Forecast Card -->
+            <div class="forecast-card" id="forecastCard5">
+                <div class="forecast-header">
+                    <div class="forecast-date">
+                        <h3 id="day5Name">Day 5</h3>
+                        <p id="day5Date">Date</p>
+                    </div>
+                    <div class="weather-icon">
+                        <img id="day5Icon" src="" alt="Weather Icon">
+                    </div>
+                </div>
+                
+                <div class="forecast-temps">
+                    <span id="day5TempHigh" class="temp-high">--</span>
+                    <span class="temp-unit">°F</span>
+                    <span id="day5TempLow" class="temp-low">--</span>
+                    <span class="temp-unit">°F</span>
+                </div>
+                
+                <div class="forecast-description">
+                    <p id="day5WeatherDesc">--</p>
+                </div>
+                
+                <div class="forecast-attrs">
+                    <div class="attr-item">
+                        <span class="attr-label">Humidity: </span>
+                        <span id="day5Humidity" class="attr-value">--%</span>
+                    </div>
+
+                    <div class="attr-item">
+                        <span class="attr-label">Wind: </span>
+                        <span id="day5WindSpeed" class="attr">-- mph</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Pressure: </span>
+                        <span id="day5Pressure" class="attr-value">-- hPa</span>
+                    </div>
+                    
+                    <div class="attr-item">
+                        <span class="attr-label">Visibility: </span>
+                        <span id="day5Visibility" class="attrValue">-- mi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/forecast.js"></script>
+</body>
+</html>

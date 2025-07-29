@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful Weather Widget - Aidan Savant</title>
+    <link rel="stylesheet" href="css/homepage.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Today's Weather</h1>
+            <p><a href="forecast.html">View 5-Day Forecast</a></p>
+        </header>
+
+        <div class="search-card">
+            <input type="text" id="locSearchInput" placeholder="Enter: city, state" class="search-input">
+            <div id="autocompleteResults" class="autocomplete-results"></div>
+            <button id="locSearchBtn" class="loc-search-btn">Get Weather!</button>
+        </div>
+
+        <div class="weather-card" id="weatherCard">
+            <div class="weather-header">
+                <div class="location-info">
+                    <h2 id="cityName">City Name</h2>
+                    <p id="StateAndCountry">State, Country</p>
+                    <p id="currDate">Date</p>
+                </div>
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="" alt="Weather Icon">
+                </div>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temperature">
+                    <span id="currentTemp">--</span>
+                    <span class="temp-unit">°F</span>
+                </div>
+                <div class="weather-description">
+                    <p id="weatherDesc">--</p>
+                    <p id="feelsLike">Feels like --°F</p>
+                </div>
+            </div>
+            
+            <div class="weather-attrs">
+                <div class="attr-item">
+                    <span class="attr-label">Humidity: </span>
+                    <span id="humidity" class="attr-value">--%</span>
+                </div>
+
+                <div class="attr-item">
+                    <span class="attr-label">Wind Speed: </span>
+                    <span id="windSpeed" class="attr">-- mph</span>
+                </div>
+                
+                <div class="attr-item">
+                    <span class="attr-label">Pressure: </span>
+                    <span id="pressure" class="attr-value">-- hPa</span>
+                </div>
+                
+                <div class="attr-item">
+                    <span class="attr-label">Visibility: </span>
+                    <span id="visibility" class="attrValue">-- mi</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/homepage.js"></script>
+</body>
+</html>
